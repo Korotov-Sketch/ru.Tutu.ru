@@ -21,7 +21,7 @@ public class CityTest {
     public void TestTwo(){
 
         String login = "olegkorotov1999@yandex.ru";
-        String password ="Oleg23081999";
+        String password ="Oleg23081999";//
 
         FirstPage firstPage = new FirstPage(driver);
         firstPage.open();
