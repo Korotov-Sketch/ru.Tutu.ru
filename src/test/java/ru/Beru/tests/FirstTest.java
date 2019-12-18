@@ -10,6 +10,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import ru.Beru.tests.PriceTest;
+import ru.Beru.tests.CityTest;
+import ru.Beru.tests.LoginTest;
 
 import java.util.concurrent.TimeUnit;
 
@@ -21,6 +24,7 @@ public  ChromeDriver driver;
         System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
         driver = new ChromeDriver();
     }
+
 
     @Test
     public void firstTest() {

@@ -33,11 +33,7 @@ public class SettingsPage {
     @Step("check city")
     public void check() {
         wait.until(ExpectedConditions.visibilityOf(city));
-        System.out.println("-------");
-        System.out.println(region.getText().substring(8,region.getText().length()));
-        System.out.println(city.getText());
-        System.out.println("------");
-        Assert.assertEquals(city.getText(), region.getText());
+        Assert.assertEquals(city.getText(), region.getText().substring(8,region.getText().length()));
     }
 }
 
