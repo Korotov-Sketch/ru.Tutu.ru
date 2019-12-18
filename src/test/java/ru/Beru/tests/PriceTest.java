@@ -28,7 +28,7 @@ public class PriceTest {
         toothPage.CheckPrice();
         //toothPage.GetOne();
         toothPage.GTB();
-        BacketPage backetPage = new BacketPage(driver);
+        BacketPage backetPage = new BacketPage(driver);//
         backetPage.CheckThatStuff();
     }
 
