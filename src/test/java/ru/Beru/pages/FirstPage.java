@@ -109,6 +109,12 @@ public class FirstPage {
         settings.click();
     }
 
+    @Step ("Search for toothbrushes")
+    public void SearchTooth(){
+        searchL.sendKeys("Электрические зубные щётки");
+        searchB.click();
+    }
+
 
 
 }
