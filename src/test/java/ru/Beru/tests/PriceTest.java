@@ -1,7 +1,7 @@
 package ru.Beru.tests;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.chrome.ChromeDriver;
 import ru.Beru.pages.BacketPage;
 import ru.Beru.pages.FirstPage;
@@ -11,7 +11,7 @@ import ru.Beru.pages.ToothPage;
 public class PriceTest {
     public ChromeDriver driver;
 
-    @Before
+    @BeforeTest
     public void SetUp(){
         System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
         driver = new ChromeDriver();
