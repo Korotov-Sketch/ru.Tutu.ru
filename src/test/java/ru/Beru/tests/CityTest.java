@@ -27,7 +27,7 @@ public class CityTest {
         firstPage.open();
         firstPage.ChangeCity("Хвалынск");
 
-        //firstPage.checkCity("Хвалынск");//раскомментить
+        firstPage.checkCity("Хвалынск");//раскомментить
 
         firstPage.openPassportPage();
 
@@ -35,7 +35,7 @@ public class CityTest {
         signin.LogIn(login);
         signin.PasswordIn(password);
 
-       // firstPage.opensettings();//раскомментить (доработать)
+        //firstPage.opensettings();//раскомментить (доработать)
 
         SettingsPage settingsPage = new SettingsPage(driver);
         settingsPage.check();

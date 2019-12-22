@@ -80,12 +80,13 @@ public class FirstPage {
         profile.click();
     }
 
-    @Step("Check that current city is {cityName}")
+    @Step("Проверить что город - Хвалынск")
     public void checkCity(String cityName) {
-        Assert.assertEquals(cityName, region.getText());
+        wait.until(ExpectedConditions.visibilityOf(region));
+        Assert.assertEquals(cityName, region.getText().substring(8, region.getText().length()));
     }
 
-    @Step("Change city from Саратов to Хвалынск")
+    @Step("Замена города на Хвалынск")
     public void ChangeCity(String cty){
         wait.until(ExpectedConditions.elementToBeClickable(region));
         region.click();
@@ -94,6 +95,7 @@ public class FirstPage {
         wait.until(ExpectedConditions.elementToBeClickable(dltcty));
         dltcty.click();
         regionstr.sendKeys(cty.substring(0,cty.length()-1));
+        wait.until(ExpectedConditions.elementToBeClickable(targetregion));
         driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
         regionstr.sendKeys(cty.substring(cty.length()-1,cty.length()));
         wait.until(ExpectedConditions.elementToBeClickable(targetregion));
@@ -102,14 +104,15 @@ public class FirstPage {
         okcity.click();
     }
 
-    @Step("Check that current city is {cityName}")
+    @Step("открыть настройки")
     public void opensettings() {
+        wait.until(ExpectedConditions.visibilityOf(profile));
         profile.click();
         wait.until(ExpectedConditions.visibilityOf(settings));
         settings.click();
     }
 
-    @Step ("Search for toothbrushes")
+    @Step ("Поиск зубных щёток")
     public void SearchTooth(){
         searchL.sendKeys("Электрические зубные щётки");
         searchB.click();
