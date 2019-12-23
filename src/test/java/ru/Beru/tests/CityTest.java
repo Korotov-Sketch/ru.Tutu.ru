@@ -4,18 +4,13 @@ package ru.Beru.tests;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.chrome.ChromeDriver;
+import ru.Beru.WebDriverSettings;
 import ru.Beru.pages.FirstPage;
 import ru.Beru.pages.SettingsPage;
 import ru.Beru.pages.signinPage;
-public class CityTest {
+public class CityTest extends WebDriverSettings {
 
-    public ChromeDriver driver;
 
-    @BeforeTest
-    public void SetUp(){
-        System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
-        driver = new ChromeDriver();
-    }
 
     @Test
     public void TestTwo(){

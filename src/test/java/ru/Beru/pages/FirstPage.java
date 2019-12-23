@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
-public class FirstPage {
+public class FirstPage  {
     WebDriver driver;
     WebDriverWait wait;
 
