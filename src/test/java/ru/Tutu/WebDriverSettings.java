@@ -46,3 +46,4 @@ public class WebDriverSettings {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 }
+
