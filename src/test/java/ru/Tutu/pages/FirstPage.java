@@ -106,9 +106,4 @@ public class FirstPage  {
         FindThatTickets.click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("b-train__schedule__train_card")));
     }
-
-
-
-
-
 }

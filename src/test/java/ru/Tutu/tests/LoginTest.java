@@ -19,6 +19,5 @@ public class LoginTest extends WebDriverSettings {
         firstPage.Loginin(login, password);
         firstPage.checkLogin("Личные заказы");
 
-       // driver.close();
     }
 }

@@ -14,8 +14,6 @@ public class PriceTest  extends WebDriverSettings {
 
         FirstPage firstPage = new FirstPage(driver);
         firstPage.open();
-        //firstPage.openPassportPage();
-        //firstPage.Loginin(login, password);
         firstPage.inputData("Москва","Санкт-Петербург","23.08.2020");
     }
 
