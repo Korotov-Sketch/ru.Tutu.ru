@@ -9,14 +9,11 @@ public class LoginTest extends WebDriverSettings {
 
 
     @Test
-    public void TestOne(){
-        String login = "olegkorotof@mail.ru";
-        String password ="Oleg23081999";
-
+    public void LoginTest(){
         FirstPage firstPage = new FirstPage(driver);
         firstPage.open();
         firstPage.openPassportPage();
-        firstPage.Loginin(login, password);
+        firstPage.Loginin("olegkorotof@mail.ru", "Oleg23081999");
         firstPage.checkLogin("Личные заказы");
 
     }

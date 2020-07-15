@@ -20,7 +20,7 @@ public class WebDriverSettings {
 
     @BeforeMethod
     public void beforeClass() {
-        System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
         chromeDriver = new ChromeDriver();
         driver = new EventFiringWebDriver(chromeDriver);
         wait = new WebDriverWait(chromeDriver, 10);

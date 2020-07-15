@@ -56,6 +56,8 @@ public class FirstPage  {
     private WebElement FindThatTickets;
 
 
+
+
     @Step("Open tutu.ru")
     public void open() {
         driver.manage().window().maximize();
@@ -106,4 +108,8 @@ public class FirstPage  {
         FindThatTickets.click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("b-train__schedule__train_card")));
     }
+
+
+
+
 }
