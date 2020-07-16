@@ -15,6 +15,7 @@ public class LoginTest extends WebDriverSettings {
         firstPage.openPassportPage();
         firstPage.Loginin("olegkorotof@mail.ru", "Oleg23081999");
         firstPage.checkLogin("Личные заказы");
+        firstPage.GetOutOfThere();
 
     }
 }

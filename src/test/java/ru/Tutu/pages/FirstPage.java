@@ -55,6 +55,9 @@ public class FirstPage  {
     @FindBy(css = "[class=\"b-button__arrow__button j-button j-button-submit _title j-submit_button _blue\"]")// кнопка "найти билеты"
     private WebElement FindThatTickets;
 
+    @FindBy(css = "[class=\"logout j-link-logout\"]")// кнопка "найти билеты"
+    private WebElement LoginOut;
+
 
 
 
@@ -108,7 +111,13 @@ public class FirstPage  {
         FindThatTickets.click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("b-train__schedule__train_card")));
     }
-
+@Step ("Get out from my Account!!!!!!")
+    public void GetOutOfThere(){
+    wait.until(ExpectedConditions.elementToBeClickable(LoginOut));
+    LoginOut.click();
+    wait.until(ExpectedConditions.elementToBeClickable(profile));
+    Assert.assertEquals("Войти", profile.getText());
+}
 
 
 
